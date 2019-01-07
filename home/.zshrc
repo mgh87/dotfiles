@@ -19,8 +19,15 @@ antigen use oh-my-zsh
 #
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Plugins
 #antigen bundle ubuntu
+antigen bundle aws
+# antigen bundle gitfast # might worth consideration
+antigen bundle docker
+antigen bundle extract
 antigen bundle git
 antigen bundle mvn
+antigen bundle node
+antigen bundle npm
+# antigen bundle pass # checkout https://www.passwordstore.org/ and use it instead of lastpass?
 
 # Enable vi-mode
 #
