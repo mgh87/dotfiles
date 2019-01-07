@@ -1,3 +1,6 @@
+# mgh87 config file for zsh
+# based on hschne.at/ configuration
+
 # Antigen
 # 
 # Antigen is plugin manager of ZSH. 
