@@ -3,7 +3,7 @@
 # Antigen is plugin manager of ZSH. 
 #
 # Website: http://antigen.sharats.me/
-source /usr/share/zsh/share/antigen.zsh
+source ~/antigen/antigen.zsh
 
 # Oh-my-Zsh
 #
