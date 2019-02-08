@@ -21,7 +21,8 @@ antigen use oh-my-zsh
 # like that.
 #
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Plugins
-#antigen bundle ubuntu
+# antigen bundle ubuntu
+antigen bundle archlinux
 antigen bundle aws
 # antigen bundle gitfast # might worth consideration
 antigen bundle docker
@@ -30,7 +31,7 @@ antigen bundle git
 antigen bundle mvn
 antigen bundle node
 antigen bundle npm
-# antigen bundle pass # checkout https://www.passwordstore.org/ and use it instead of lastpass?
+antigen bundle pass # checkout https://www.passwordstore.org/ and use it instead of lastpass?
 
 # Enable vi-mode
 #
@@ -144,3 +145,5 @@ eval "$(jenv init -)"
 
 export EDITOR=vim
 
+# Ruby config
+PATH="$PATH:$(ruby -e 'print Gem.user_dir')/bin"
