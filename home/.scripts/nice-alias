@@ -6,7 +6,6 @@ function nice-alias() {
 	for iter in $array_of_aliases
 	do
 		IFS='=' read -r al cmd <<< $iter
-#		echo $iter lalelu
 		print -P '%B%F{red}$al%F{green} = %F{blue}$cmd%f%b'
 	done
 
