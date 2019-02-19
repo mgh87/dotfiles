@@ -147,3 +147,8 @@ export EDITOR=vim
 
 # Ruby config
 PATH="$PATH:$(ruby -e 'print Gem.user_dir')/bin"
+
+# Replace agents
+export GPG_TTY="$(tty)"
+export SSH_AUTH_SOCK="/run/user/$UID/gnupg/S.gpg-agent.ssh"
+gpg-connect-agent updatestartuptty /bye
