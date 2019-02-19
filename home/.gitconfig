@@ -1,6 +1,7 @@
 [user]
 	email = martin.huter87@gmail.com
 	name = mgh87
+	signingkey = 5686D0EBC96E9B54CC5F3367B198DAAB514B53CF
 [core]
 	editor = vim
 [alias]
