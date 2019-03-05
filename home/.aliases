@@ -1,4 +1,4 @@
 alias vi=vim
-alias ll=ls -slap
+alias ll="ls -slap"
 alias na=nice-alias
 alias tipp10="cd ~/TIPP10 && git pull && tipp10"

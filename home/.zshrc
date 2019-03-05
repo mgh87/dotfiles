@@ -152,3 +152,10 @@ PATH="$PATH:$(ruby -e 'print Gem.user_dir')/bin"
 export GPG_TTY="$(tty)"
 export SSH_AUTH_SOCK="/run/user/$UID/gnupg/S.gpg-agent.ssh"
 gpg-connect-agent updatestartuptty /bye
+
+# GPG key id
+export KEYID=5686D0EBC96E9B54CC5F3367B198DAAB514B53CF
+
+# Initialize autocompletion
+# Not working...
+# compinit
