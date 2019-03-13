@@ -99,6 +99,11 @@ source $HOME/.aliases
 # Add custom scripts
 export PATH="$HOME/.scripts:$PATH"
 
+# Replace agents
+export GPG_TTY="$(tty)"
+export SSH_AUTH_SOCK="/run/user/$UID/gnupg/S.gpg-agent.ssh"
+gpg-connect-agent updatestartuptty /bye
+
 # Homeshick
 #
 # Homeshick is a dotfile manager written in Bash. Useful for 
@@ -147,11 +152,6 @@ export EDITOR=vim
 
 # Ruby config
 PATH="$PATH:$(ruby -e 'print Gem.user_dir')/bin"
-
-# Replace agents
-export GPG_TTY="$(tty)"
-export SSH_AUTH_SOCK="/run/user/$UID/gnupg/S.gpg-agent.ssh"
-gpg-connect-agent updatestartuptty /bye
 
 # GPG key id
 export KEYID=5686D0EBC96E9B54CC5F3367B198DAAB514B53CF
