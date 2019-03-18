@@ -32,6 +32,7 @@ antigen bundle mvn
 antigen bundle node
 antigen bundle npm
 antigen bundle pass # checkout https://www.passwordstore.org/ and use it instead of lastpass?
+antigen bundle colored-man-pages
 
 # Enable vi-mode
 #
