@@ -4,6 +4,14 @@
 	signingkey = 5686D0EBC96E9B54CC5F3367B198DAAB514B53CF
 [core]
 	editor = vim
+[diff]
+    tool = vscode
+[difftool "vscode"]
+    cmd = code --wait --diff $LOCAL $REMOTE
+[merge]
+    tool = vscode
+[mergetool "vscode"]
+    cmd = code --wait $MERGED
 [alias]
     lg = !"git lg1"
     lg1 = !"git lg1-specific --all"
